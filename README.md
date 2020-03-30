@@ -16,7 +16,7 @@ _formato v.4 del 30/03/2020_
 | **lat**                         | Latitudine (centroide)            | lat                               | WGS84                         | 42.6589177          |
 | **long**                        | Longitudine (centroide)           | log                              | WGS84                         | 13.70439971         |
 | **residenti**                 | Totale residenti da ISTAT 2019              |                       | Numero                        | 11819                   |
-| **casi_positivi**                 | Totale dei casi positivi ad oggi diagnosticati; _calcolo: totale_attualmente_positivi + dimessi_guariti + deceduti_              | totale_casi         | Numero                        | 3                   |
+| **casi_positivi**                 | Totale dei casi positivi ad oggi diagnosticati; _calcolo: attualmente_positivi + guariti + deceduti_              | totale_casi         | Numero                        | 3                   |
 | **isolamento_volontario**      | Attuale numero di persone (non testate positive) che sono in isolamento fiduciario in casa o altra struttura non ospedaliera |                        | Numero                        | 3                   |
 | **in_isolamento_domiciliare**      | Attuale numero di casi positivi che sono in isolamento contumaciale in casa o altra struttura non ospedaliera | isolamento_domiciliare                       | Numero                        | 3                   |
 | **usciti_da_isolamento**      | Totale numero di casi positivi usciti dall'isolamento |                        | Numero                        | 3                   |

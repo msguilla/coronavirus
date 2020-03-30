@@ -13,6 +13,7 @@ _formato v.6 del 30/03/2020_
 | **denominazione_regione**              | Denominazione della Regione |denominazione_regione         | Testo                        | Umbria                  |
 | **codice_geo**              | Codice area geografica (ISTAT per i comuni) o della struttura (ad es. ospedali) a cui si riferiscono i dati |         | Numero                        | 55004                  |
 | **denominazione_geo**       | Denominazione dell'area o struttura a cui si riferiscono i dati       |                                                   | Testo                         | Amelia             |
+| **tipo_geo**              | Tipo di area geografica o struttura a cui si riferiscono i dati |         | Testo                        | Comune                  |
 | **lat**                         | Latitudine (centroide)            | lat                               | WGS84                         | 42.6589177          |
 | **long**                        | Longitudine (centroide)           | log                              | WGS84                         | 13.70439971         |
 | **residenti**                 | Totale residenti da ISTAT 2019              |                       | Numero                        | 11819                   |

@@ -3,7 +3,7 @@
 repository dedicato alla raccolta dati relativi all'emergenza COVID-19 in Umbria
 (in costruzione)
 
-_formato v.4 del 30/03/2020_
+_formato v.6 del 30/03/2020_
 
 | Nome campo                  | Descrizione                       | Equivalente campo nazionale                  | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
@@ -25,7 +25,7 @@ _formato v.4 del 30/03/2020_
 | **di_cui_ricoverati_in_terapia_intensiva**           | Attuale numero di casi positivi ricoverati in terapia intensiva   | terapia_intensiva                         | Numero                        | 3                   |
 | **attualmente_positivi** | Attuale numero di casi positivi; _calcolo: ricoverati_totale + in_isolamento_domiciliare_      | totale_attualmente_positivi  | Numero                        | 3                   |
 | **nuovi_positivi**  | Nuovi attualmente positivi; _calcolo: attualmente_positivi - attualmente_positivi del giorno prima_       | nuovi_attualmente_positivi  | Numero                        | 3                   |
-| **tasso_positivi_x1000**  | Tasso totale casi positivi ogni 1000 abitanti residenti; _calcolo: casi_positivi / residenti * 1000_  |   | Numero                        | 0,85                   |
+| **tasso_positivi_x1000**  | Tasso attuali casi positivi ogni 1000 abitanti residenti; _calcolo: attualmente_positivi / residenti * 1000_  |   | Numero                        | 0,85                   |
 | **sign_positivi_x1000**  | Significatività dei casi positivi ogni 1000 abitanti residenti rispetto alla media regionale; _calcolo: 1 se tasso_positivi_x1000 superiore del 5% alla media, oppure -1 se tasso_positivi_x1000 inferiore del 5% alla media, altrimenti 0 se intorno alla media_  |   | Numero                        | 1                   |
 | **guariti**             | Totale dei casi positivi che risolvono i sintomi dell’infezione da Covid-19 e che risultano negativi in due test consecutivi effettuati a distanza di 24 ore uno dall’altro           | dimessi_guariti                            | Numero                        | 3                   |
 | **clinicamente_guariti**             | Totale dei casi positivi che risultato clinicamente guariti           |                             | Numero                        | 3                   |

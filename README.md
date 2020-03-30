@@ -9,7 +9,7 @@ _formato v.4 del 30/03/2020_
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
 | **data**                        | Data dell’informazione            | data                                   | YYYY-MM-DD HH:MM:SS (ISO 8601) Ora italiana | 2020-03-05 12:15:45 |
 | **stato**                       | Stato di riferimento              | stato                                  | XYZ (ISO 3166-1 alpha-3)      | ITA                 |
-| **codice_regione**              | Codice della Regione (ISTAT) |         | codice_regione                        | Numero    | 10                  |
+| **codice_regione**              | Codice della Regione (ISTAT) | codice_regione                        | Numero    | 10                  |
 | **denominazione_regione**              | Denominazione della Regione |denominazione_regione         | Testo                        | Umbria                  |
 | **codice_geo**              | Codice area geografica (ISTAT per i comuni) o della struttura (ad es. ospedali) |         | Numero                        | 55004                  |
 | **denominazione_geo**       | Denominazione dell'area o struttutra       |                                                   | Testo                         | Amelia             |

@@ -11,11 +11,11 @@ _formato v.4 del 30/03/2020_
 | **stato**                       | Stato di riferimento              | stato                                  | XYZ (ISO 3166-1 alpha-3)      | ITA                 |
 | **codice_regione**              | Codice della Regione (ISTAT) | codice_regione                        | Numero    | 10                  |
 | **denominazione_regione**              | Denominazione della Regione |denominazione_regione         | Testo                        | Umbria                  |
-| **codice_geo**              | Codice area geografica (ISTAT per i comuni) o della struttura (ad es. ospedali) |         | Numero                        | 55004                  |
-| **denominazione_geo**       | Denominazione dell'area o struttutra       |                                                   | Testo                         | Amelia             |
+| **codice_geo**              | Codice area geografica (ISTAT per i comuni) o della struttura (ad es. ospedali) a cui si riferiscono i dati |         | Numero                        | 55004                  |
+| **denominazione_geo**       | Denominazione dell'area o struttura a cui si riferiscono i dati       |                                                   | Testo                         | Amelia             |
 | **lat**                         | Latitudine (centroide)            | lat                               | WGS84                         | 42.6589177          |
 | **long**                        | Longitudine (centroide)           | log                              | WGS84                         | 13.70439971         |
-| **residenti**                 | Totale residenti Istat 2019              |                       | Numero                        | 11819                   |
+| **residenti**                 | Totale residenti da ISTAT 2019              |                       | Numero                        | 11819                   |
 | **casi_positivi**                 | Totale dei casi positivi ad oggi diagnosticati; somma: totale_attualmente_positivi + dimessi_guariti + deceduti              | totale_casi         | Numero                        | 3                   |
 | **isolamento_volontario**      | Attuale numero di persone (non testate positive) che sono in isolamento fiduciario in casa o altra struttura non ospedaliera |                        | Numero                        | 3                   |
 | **in_isolamento_domiciliare**      | Attuale numero di casi positivi che sono in isolamento contumaciale in casa o altra struttura non ospedaliera | isolamento_domiciliare                       | Numero                        | 3                   |

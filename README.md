@@ -1,10 +1,11 @@
-# coronavirus
+# Dashboard COVID-19 Regione Umbria
 
-repository dedicato all'emergenza COVID-19 in Umbria
+repository dedicato alla raccolta dati relativi all'emergenza COVID-19 in Umbria
 (in costruzione)
 
+_formato v.4 del 30/03/2020_
 
-| Nome campo                  | Descrizione                       | Equivalente nazionale                  | Formato                       | Esempio             |
+| Nome campo                  | Descrizione                       | Equivalente campo nazionale                  | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
 | **data**                        | Data dell’informazione            | data                                   | YYYY-MM-DD HH:MM:SS (ISO 8601) Ora italiana | 2020-03-05 12:15:45 |
 | **stato**                       | Stato di riferimento              | stato                                  | XYZ (ISO 3166-1 alpha-3)      | ITA                 |

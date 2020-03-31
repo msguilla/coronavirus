@@ -33,4 +33,4 @@ _formato v.1.07 del 31/03/2020_
 | **deceduti**                    | Totale dei casi positivi che sono deceduti, anche con diagnosi post-mortem; La conferma che la causa del decesso è attribuibile esclusivamente al SARS-CoV-2 verrà dichiarata dall’Istituto Superiore di Sanità | deceduti                                  | Numero                        | 3                   |
 | **tamponi_eseguiti**                     | Totale dei tamponi (test) effettuati, un soggetto può essere sottoposto a più tamponi quindi non è indicativo delle persone controllate       | tamponi                        | Numero                        | 3                   |
 | **note**                     | Eventuali note sul dato raccolto       |                         | Testo                        | XYZ                   |
-| **status**                     | Se dato ufficiale confermato = -1       |                         | Numero                        | -1                   |
+| **data_status**                     | Se dato ufficiale confermato = -1       |                         | Numero                        | -1                   |

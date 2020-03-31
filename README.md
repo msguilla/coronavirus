@@ -3,7 +3,7 @@
 repository dedicato alla raccolta dati relativi all'emergenza COVID-19 in Umbria
 (in costruzione)
 
-_formato v.6 del 30/03/2020_
+_formato v.1.07 del 31/03/2020_
 
 | Nome campo                  | Descrizione                       | Equivalente campo nazionale                  | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
@@ -32,4 +32,5 @@ _formato v.6 del 30/03/2020_
 | **guariti_clinici**             | Totale dei casi positivi che risultano clinicamente guariti anche se ancora non hanno superato due test consecutivi      |                             | Numero                        | 3                   |
 | **deceduti**                    | Totale dei casi positivi che sono deceduti, anche con diagnosi post-mortem; La conferma che la causa del decesso è attribuibile esclusivamente al SARS-CoV-2 verrà dichiarata dall’Istituto Superiore di Sanità | deceduti                                  | Numero                        | 3                   |
 | **tamponi_eseguiti**                     | Totale dei tamponi (test) effettuati, un soggetto può essere sottoposto a più tamponi quindi non è indicativo delle persone controllate       | tamponi                        | Numero                        | 3                   |
-| **note**                     | Eventuali note sul dato raccolto       |                         | testo                        | XYZ                   |
+| **note**                     | Eventuali note sul dato raccolto       |                         | Testo                        | XYZ                   |
+| **status**                     | Se dato ufficiale confermato = -1       |                         | Numero                        | -1                   |

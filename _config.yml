@@ -25,7 +25,7 @@ mega_menu_accedi: false
 social_block: true
 social_username: "&commat;RegioneUmbria"    # short
 medium_username:
-facebook_username: RegioneUmbria
+facebook_username: regione.umbria.official
 twitter_username:  RegioneUmbria
 youtube_username: regioneumbriabrand
 linkedin_username:
@@ -46,7 +46,7 @@ note_legali_url: http://www.regione.umbria.it/note-legali
 contatti_url:
 
 # Home sections
-links_buttons: true
+links_buttons: false
 links_buttons_title:
 posts_list: false
 posts_list_title: Autem reiciendis post

@@ -1,0 +1,96 @@
+title:             "Dashboard COVID-19 Regione Umbria"
+description:       "Sito tematico sui dti dell'emergenza #coronavirusumbria"
+baseurl:           "/"
+url:               "http://coronavirus.regione.umbria.it/"
+author:            "Redazione"
+
+personalizza_css: true
+
+# Dashboard on/off
+dashboard_adu_attiva: true
+
+# Header data
+header_parent_title: Regione Umbria
+header_parent_url: "https://www.regione.umbria.it"
+header_language_selector: false
+header_logo: /assets/images/LogoRegione85x96.svg
+header_title: Dashboard COVID-19 Regione Umbria
+header_subtitle: Sito tematico sui dti dell'emergenza #coronavirusumbria
+search: false
+search_full_content: false
+mega_menu: false    # if true, require _data/menu.yml
+mega_menu_accedi: false
+
+# Social profiles
+social_block: true
+social_username: "&commat;RegioneUmbria"    # short
+medium_username:
+facebook_username: RegioneUmbria
+twitter_username:  RegioneUmbria
+youtube_username: regioneumbriabrand
+linkedin_username:
+github_username: Regione-Umbria
+
+# Footer data
+footer_logo: /assets/images/LogoRegioneWhite.png
+footer_title: Regione Umbria
+footer_subtitle: Sito tematico sui dti dell'emergenza #coronavirusumbria
+recapiti1: Recapiti
+recapiti2: Corso Vannucci, 96
+recapiti3: 06121 Perugia
+recapiti4: Tel. (+39) 075.504.1
+email: urp@regione.umbria.it
+pec: regione.giunta@postacert.umbria.it
+privacy_url: http://www.regione.umbria.it/privacy-policy
+note_legali_url: http://www.regione.umbria.it/note-legali
+contatti_url:
+
+# Home sections
+links_buttons: true
+links_buttons_title:
+posts_list: false
+posts_list_title: Autem reiciendis post
+section_lists: false
+section_lists_title: Dignissimos recusandae landing
+twitter_list: false
+twitter_list_title: Twitter@amministrazione
+links_leads: false
+links_leads_title: A est rerum leads
+
+# Build settings
+# permalink: /:categories/:title/
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"#
+locale: "it-IT"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+defaults:
+# _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      toc: false
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: false
+      read_time: false
+      comments: false
+      share: true
+      related: false
+  # _foo
+  - scope:
+      path: ""
+      type: foo
+    values:
+      layout: single
+
+theme: jekyll-theme-cayman

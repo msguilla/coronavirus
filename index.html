@@ -6,88 +6,17 @@ layout: home
 <div class="u-layout-wide u-layout-center u-text-r-l u-padding-r-top u-margin-r-bottom u-layout-r-withGutter">
   <section class="Grid">
 
-    <div class="Grid-cell u-sizeFull u-md-size2of3 u-lg-size2of3 u-text-r-s u-padding-r-all u-background-compl-10 u-layout-centerContent">
+    <h2 class="u-layout-centerLeft u-text-r-s" id="dashboard">
+      <a class="u-color-50 u-textClean u-text-h3" href="http://www.regione.umbria.it/coronavirus">Ultime novità</a>
+    </h2>
 
-<script>
-
-$(function() {
-  var $content = $("#jsonContent");
-  var data = {
-    rss_url: "https://medium.com/feed/adumbria"
-  };
-  $.get("https://api.rss2json.com/v1/api.json", data, function(response) {
-    if (response.status == "ok") {
-      var output = "";
-      $.each(response.items, function(k, item) {
-        var visibleSm;
-        if (k < 3) {
-          visibleSm = "";
-        } else {
-          visibleSm = " visible-sm";
-        }
-        //output += '<div class="col-sm-6 col-md-4' + visibleSm + '">';
-        //output += '<div class="blog-post"><header>';
-        //output +=
-        //  '<h4 class="date">' +
-        //  $.format.date(item.pubDate, "dd<br>MMM") +
-        //  "</h4>";
-
-        var tagIndex = item.description.indexOf("<img"); // Find where the img tag starts
-        var srcIndex =
-          item.description.substring(tagIndex).indexOf("src=") + tagIndex; // Find where the src attribute starts
-        var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
-        var srcEnd =
-          item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
-        var src = item.description.substring(srcStart, srcEnd); // Extract just the URL
-        output +=
-          '<div class="one-blog-element Grid-cell u-md-size1of2 u-lg-size1of2 u-flex u-margin-r-bottom u-flexJustifyCenter">' +
-          '<div class="u-nbfc u-borderShadow-xxs u-borderRadius-m u-color-grey-30 u-background-white">' +
-          '<img class="one-img-responsive u-sizeFull" src="' +
-          src +
-          '" alt="immagine del post">' // + width="360px" height="240px" + '</div></header>';
-        output +=
-          '<div class="one-blog-content u-color-black u-text-r-l u-padding-r-all u-layout-prose"><h3 class="u-text-h4 u-textClean u-color-black"><a class="u-color-50 u-textClean" href="' +
-          item.link +
-          '">' +
-          item.title +
-          "</a></h3>";
-        //output +=
-        //  '<div class="post-meta"><span>By ' + item.author + "</span></div>";
-
-        var yourString = item.description.replace(/<img[^>]*>/g, ""); //replace with your string.
-        var yourString = item.description.replace(/<figure.*\/figure>/g, ""); //by gg
-        var maxLength = 120; // maximum number of characters to extract
-        //trim the string to the maximum length
-        var trimmedString = yourString.substr(0, maxLength);
-        //re-trim if we are in the middle of a word
-        trimmedString = trimmedString.substr(
-          0,
-          Math.min(trimmedString.length, trimmedString.lastIndexOf(" "))
-        );
-        output += "<p class='u-text-p u-textSecondary u-color-black'>" + trimmedString + "...</p>";
-        output += "</div></div></div>";
-        //output += "</div>";
-        return k < 3;
-      });
-      $content.html(output);
-    }
-  });
-});
-
-</script>
-
-      <h2 class="u-layout-centerLeft u-text-r-s" id="news">
-        <a class="u-color-50 u-textClean u-text-h3" href="https://medium.com/adumbria">Novità</a>
-      </h2>
-
-      <p class="u-textCenter u-text-md-right u-text-lg-right u-margin-r-top">
-        <a href="http://www.regione.umbria.it/coronavirus" class="u-color-50 u-textClean u-text-h4" id="">
-          clicca qui per andare alla pagina informativa sull'emergenza #coronavirusumbria <span class="Icon Icon-chevron-right"></a>
-      </p>
-    </div>
+    <p>
+      <a href="http://www.regione.umbria.it/coronavirus" class="u-color-50 u-textClean u-text-h4" id="">
+        Clicca qui per andare alla pagina informativa sull'emergenza #coronavirusumbria <span class="Icon Icon-chevron-right"></a>
+    </p>
 
     <h2 class="u-layout-centerLeft u-text-r-s" id="dashboard">
-      <a class="u-color-50 u-textClean u-text-h3" href="https://medium.com/adumbria">Dashboard</a>
+      <a class="u-color-50 u-textClean u-text-h3" href="">Dashboard</a>
     </h2>
 
     <p>
@@ -96,10 +25,11 @@ $(function() {
       La presente dashboard ha lo scopo di informare i cittadini e mettere a disposizione
       i dati raccolti, utili ai soli fini comunicativi e informativi, sotto licenza CC-BY-4.0.<br/>
       Per ulteriori dettagli vedere la
-      <a href="readme" class="u-color-50 u-textClean u-text-h4" id="">pagina descrittiva delle definizioni usate</a>.
+      <a href="https://github.com/Regione-Umbria/coronavirus" class="u-color-50 u-textClean" id="">pagina descrittiva delle definizioni usate</a>.
     </p>
 
-    <iframe style="min-height: 800px" src="https://dashboard.regione.umbria.it/public/dashboard/06a87ff1-4923-4c9e-af1f-45877e0d481e" width="100%" height="1600"   frameborder="0" allowtransparency></iframe>  
+    <br/>
+    <iframe style="min-height: 800px" src="https://dashboard.regione.umbria.it/public/dashboard/06a87ff1-4923-4c9e-af1f-45877e0d481e" width="100%" height="2000"   frameborder="0" allowtransparency></iframe>  
 
   </section>
 </div>

@@ -1,5 +1,5 @@
 title:             "Dashboard COVID-19 Regione Umbria"
-description:       "Sito tematico sui dati dell'emergenza #coronavirusumbria"
+description:       "Sito tematico sui dati dell'emergenza coronavirus in Umbria"
 baseurl:           "/"
 url:               "http://coronavirus.regione.umbria.it/"
 author:            "Redazione"
@@ -15,7 +15,7 @@ header_parent_url: "https://www.regione.umbria.it"
 header_language_selector: false
 header_logo: /assets/images/LogoRegione85x96.svg
 header_title: Dashboard COVID-19 Regione Umbria
-header_subtitle: Sito tematico sui dti dell'emergenza #coronavirusumbria
+header_subtitle: Sito tematico sui dati dell'emergenza coronavirus in Umbria
 search: false
 search_full_content: false
 mega_menu: false    # if true, require _data/menu.yml
@@ -34,7 +34,7 @@ github_username: Regione-Umbria
 # Footer data
 footer_logo: /assets/images/LogoRegioneWhite.png
 footer_title: Regione Umbria
-footer_subtitle: Sito tematico sui dati dell'emergenza #coronavirusumbria
+footer_subtitle: Sito tematico sui dati dell'emergenza coronavirus in Umbria
 recapiti1: Recapiti
 recapiti2: Corso Vannucci, 96
 recapiti3: 06121 Perugia
@@ -43,7 +43,7 @@ email: urp@regione.umbria.it
 pec: regione.giunta@postacert.umbria.it
 privacy_url: http://www.regione.umbria.it/privacy-policy
 note_legali_url: http://www.regione.umbria.it/note-legali
-contatti_url:
+contatti_url: http://www.regione.umbria.it/contatti
 
 # Home sections
 links_buttons: false

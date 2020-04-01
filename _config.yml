@@ -1,5 +1,5 @@
 title:             "Dashboard COVID-19 Regione Umbria"
-description:       "Sito tematico sui dti dell'emergenza #coronavirusumbria"
+description:       "Sito tematico sui dati dell'emergenza #coronavirusumbria"
 baseurl:           "/"
 url:               "http://coronavirus.regione.umbria.it/"
 author:            "Redazione"
@@ -34,7 +34,7 @@ github_username: Regione-Umbria
 # Footer data
 footer_logo: /assets/images/LogoRegioneWhite.png
 footer_title: Regione Umbria
-footer_subtitle: Sito tematico sui dti dell'emergenza #coronavirusumbria
+footer_subtitle: Sito tematico sui dati dell'emergenza #coronavirusumbria
 recapiti1: Recapiti
 recapiti2: Corso Vannucci, 96
 recapiti3: 06121 Perugia

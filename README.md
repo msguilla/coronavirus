@@ -14,8 +14,8 @@ _formato v.1.08 del 03/04/2020_
 | **codice_geo**              | Codice area geografica (ISTAT per i comuni) o della struttura (ad es. ospedali) a cui si riferiscono i dati |         | Numero                        | 55004                  |
 | **denominazione_geo**       | Denominazione dell'area o struttura a cui si riferiscono i dati       |                                                   | Testo                         | Amelia             |
 | **tipo_geo**              | Tipo di area geografica o struttura a cui si riferiscono i dati |         | Testo                        | Comune                  |
-| **lat**                         | Latitudine (centroide)            | lat                               | WGS84                         | 42.6589177          |
-| **long**                        | Longitudine (centroide)           | log                              | WGS84                         | 13.70439971         |
+| **lat_geo**                         | Latitudine (centroide)            | lat                               | WGS84                         | 42.6589177          |
+| **long_geo**                        | Longitudine (centroide)           | long                              | WGS84                         | 13.70439971         |
 | **residenti**                 | Totale residenti da ISTAT 2019              |                       | Numero                        | 11819                   |
 | **casi_positivi**                 | Totale dei casi positivi ad oggi diagnosticati; _calcolo: attualmente_positivi + guariti + deceduti_              | totale_casi         | Numero                        | 3                   |
 | **isolamento_volontario**      | Attuale numero di persone (non testate positive) che sono in isolamento fiduciario in casa o altra struttura non ospedaliera |                        | Numero                        | 3                   |

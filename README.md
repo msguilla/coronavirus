@@ -1,7 +1,8 @@
 # Dashboard COVID-19 Regione Umbria
 
-repository dedicato alla raccolta dati relativi all'emergenza COVID-19 in Umbria
-(in costruzione)
+Questo repository è dedicato alla raccolta e visualizzazione dei dati relativi all'emergenza COVID-19 in Umbria.
+
+(BETA attualmente in costruzione)
 
 La dashboard è stata realizzata dalla Regione Umbria allo scopo di informare i cittadini e mettere a disposizione in modo trasparente i dati raccolti, utili ai soli fini comunicativi e informativi, sotto licenza CC-BY-4.0.
 I dati vengono pubblicati nella dashboard anche più volte al giorno,  in base al loro aggiornamento progressivo e dopo validazione da parte del COR. Occorre quindi fare riferimento a data ed orario indicati per ogni informazione. Inoltre, non tutte le fonti dati sono aggiornate con la stessa cadenza temporale.Per eventuali segnalazioni sui dati: [prociv@regione.umbria.it](mailto:prociv@regione.umbria.it)

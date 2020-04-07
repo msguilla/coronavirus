@@ -11,7 +11,7 @@ I dati grezzi utilizzati dalla dashboard saranno presto resi disponibili attrave
 
 # Formato dati generali emergenza
 
-_v.1.08 del 03/04/2020_
+_v.1.09 del 07/04/2020_
 
 | Nome campo                  | Descrizione                       | Equivalente campo nazionale                  | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
@@ -42,5 +42,5 @@ _v.1.08 del 03/04/2020_
 | **tamponi_eseguiti**                     | Totale dei tamponi (test) effettuati, un soggetto può essere sottoposto a più tamponi quindi non è indicativo delle persone controllate       | tamponi                        | Numero                        | 3                   |
 | **tamponi_positivi**                     | Totale dei tamponi (test) effettuati con esito positivo       |                         | Numero                        | 3                   |
 | **tasso_tamponi_positivi**                     | Tasso percentuale di tamponi effettuati con esito positivo; _calcolo: tamponi_positivi * 100 / tamponi_eseguiti_       |                         | Numero                        | 3                   |
-| **note**                     | Eventuali note sul dato raccolto       |                         | Testo                        | XYZ                   |
-| **status**                     | Se dato ufficiale confermato = -1       |                         | Testo                        | pub                   |
+| **note**                     | Eventuali note sul dato raccolto. In questo campo viene indicata anche l'eventuale revisione di aggiornamento del dato.       |                         | Testo                        | XYZ                   |
+| **status**                     | Se dato ufficiale confermato = "pub"       |                         | Testo                        | pub                   |

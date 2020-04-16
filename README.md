@@ -11,7 +11,7 @@ I dati grezzi utilizzati dalla dashboard saranno presto resi disponibili attrave
 
 # Formato dati generali emergenza
 
-_v.1.09 del 07/04/2020_
+_v.1.10 del 16/04/2020_
 
 | Nome campo                  | Descrizione                       | Equivalente campo nazionale                  | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
@@ -25,10 +25,11 @@ _v.1.09 del 07/04/2020_
 | **lat_geo**                         | Latitudine (centroide)            | lat                               | WGS84                         | 42.6589177          |
 | **long_geo**                        | Longitudine (centroide)           | long                              | WGS84                         | 13.70439971         |
 | **residenti**                 | Totale residenti da ISTAT 2019              |                       | Numero                        | 11819                   |
-| **casi_positivi**                 | Totale dei casi positivi ad oggi diagnosticati; _calcolo: attualmente_positivi + guariti + deceduti_              | totale_casi         | Numero                        | 3                   |
-| **isolamento_volontario**      | Attuale numero di persone (non testate positive) che sono in isolamento fiduciario in casa o altra struttura non ospedaliera |                        | Numero                        | 3                   |
-| **in_isolamento_domiciliare**      | Attuale numero di casi positivi che sono in isolamento contumaciale in casa o altra struttura non ospedaliera | isolamento_domiciliare                       | Numero                        | 3                   |
-| **usciti_da_isolamento**      | Totale numero di casi positivi usciti dall'isolamento (non più positivi al tampone) |                        | Numero                        | 3                   |
+| **casi_positivi**                 | Totale complessivo delle persone ad oggi risultate positive ad almeno un tampone oro-faringeo; _calcolo: attualmente_positivi + guariti + deceduti_              | totale_casi         | Numero                        | 3                   |
+| **isolamento**      | Totale complessivo delle persone sottoposte alle due modalità di isolamento possibile, fiduciario o contumaciale. Quindi non per forza testate positive. |                        | Numero                        | 3                   |
+| **isolamento_fiduciario**      | Attuale numero di persone (non testate positive) che sono in isolamento fiduciario in casa o altra struttura non ospedaliera |                        | Numero                        | 3                   |
+| **isolamento_contumaciale**      | Attuale numero di casi positivi che sono in isolamento contumaciale in casa o altra struttura non ospedaliera | isolamento_domiciliare                       | Numero                        | 3                   |
+| **usciti_da_isolamento**      | Totale numero di casi positivi usciti dall'isolamento contumaciale (non più positivi al tampone) |                        | Numero                        | 3                   |
 | **ricoverati_totale**        | Attuale numero dei casi positivi che sono ricoverati in ospedale; _calcolo: di_cui_ricoverati_con_sintomi + di_cui_ricoverati_in_terapia_intensiva_              | totale_ospedalizzati            | Numero                        | 3                   |
 | **di_cui_ricoverati_con_sintomi**      | Attuale numero di casi positivi che sono ricoverati in reparti diversi dalla terapia intensiva | ricoverati_con_sintomi    | Numero                        | 3                   |
 | **di_cui_ricoverati_in_terapia_intensiva**           | Attuale numero di casi positivi ricoverati in terapia intensiva   | terapia_intensiva                         | Numero                        | 3                   |

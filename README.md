@@ -11,7 +11,7 @@ I dati grezzi utilizzati dalla dashboard sono resi disponibili attraverso [inter
 
 # Formato dati generali emergenza
 
-_v.1.10 del 16/04/2020_
+_v.1.11 del 18/04/2020_
 
 | Nome campo                  | Descrizione                       | Equivalente campo nazionale                  | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
@@ -41,7 +41,7 @@ _v.1.10 del 16/04/2020_
 | **guariti_clinici**             | Totale dei casi positivi che risultano clinicamente guariti, anche se ancora positivi al test. Pur non essendo più necessario il ricovero, la persona non può ritornare alla vita di comunità perché ancora con una carica virale elevata.      |                             | Numero                        | 3                   |
 | **deceduti**                    | Totale dei casi positivi che sono deceduti, anche con diagnosi post-mortem; La conferma che la causa del decesso è attribuibile esclusivamente al SARS-CoV-2 verrà dichiarata dall’Istituto Superiore di Sanità | deceduti                                  | Numero                        | 3                   |
 | **tamponi_eseguiti**                     | Totale dei tamponi (test) effettuati, un soggetto può essere sottoposto a più tamponi quindi non è indicativo delle persone controllate       | tamponi                        | Numero                        | 3                   |
-| **tamponi_positivi**                     | Totale dei tamponi (test) effettuati con esito positivo       |                         | Numero                        | 3                   |
-| **tasso_tamponi_positivi**                     | Tasso percentuale di tamponi effettuati con esito positivo; _calcolo: tamponi_positivi * 100 / tamponi_eseguiti_       |                         | Numero                        | 3                   |
+| **tamponi_positivi**                     | Totale dei tamponi (test) effettuati con esito positivo, un soggetto può essere sottoposto a più tamponi       |                         | Numero                        | 3                   |
+| **nuovi_tamponi_eseguiti**                     | Nuovi tamponi eseguiti nel singolo giorno; _calcolo: tamponi_eseguiti - tamponi_eseguiti del giorno prima_       |                         | Numero                        | 3                   |
 | **note**                     | Eventuali note sul dato raccolto. In questo campo viene indicata anche l'eventuale revisione di aggiornamento del dato.       |                         | Testo                        | XYZ                   |
 | **status**                     | Se dato ufficiale confermato = "pub"       |                         | Testo                        | pub                   |

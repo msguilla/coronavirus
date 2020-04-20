@@ -11,7 +11,7 @@ I dati grezzi utilizzati dalla dashboard sono resi disponibili attraverso [inter
 
 # Formato dati generali emergenza
 
-_v.1.11 del 18/04/2020_
+_v.1.12 del 20/04/2020_
 
 | Nome campo                  | Descrizione                       | Equivalente campo nazionale                  | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
@@ -26,6 +26,7 @@ _v.1.11 del 18/04/2020_
 | **long_geo**                        | Longitudine (centroide)           | long                              | WGS84                         | 13.70439971         |
 | **residenti**                 | Totale residenti da ISTAT 2019              |                       | Numero                        | 11819                   |
 | **casi_positivi**                 | Totale complessivo delle persone ad oggi risultate positive ad almeno un tampone oro-faringeo; _calcolo: attualmente_positivi + guariti + deceduti_              | totale_casi         | Numero                        | 3                   |
+| **nuovi_positivi**  | Nuovi casi positivi dal giorno precedente; _calcolo: casi_positivi - casi_positivi del giorno prima_       | nuovi_positivi  | Numero                        | 3                   |
 | **isolamento**      | Totale complessivo delle persone sottoposte alle due modalità di isolamento possibile, fiduciario o contumaciale. Quindi non per forza testate positive; _calcolo: attualmente_positivi + isolamento_volontario_ |                        | Numero                        | 3                   |
 | **isolamento_volontario (c.d. fiduciario)**      | Attuale numero di persone sottoposte ad isolamento fiduciario in quanto hanno avuto contatti stretti con casi positivi, loro familiari o casi sospetti definiti dall'ISP. Non sono testate positive e sono in isolamento in casa o altra struttura non ospedaliera |                        | Numero                        | 3                   |
 | **in_isolamento_domiciliare (c.d. contumaciale)**      | Attuale numero di casi positivi che sono tenuti a restare in isolamento contumaciale, senza ricovero | isolamento_domiciliare                       | Numero                        | 3                   |
@@ -34,7 +35,6 @@ _v.1.11 del 18/04/2020_
 | **di_cui_ricoverati_con_sintomi**      | Attuale numero di casi positivi che sono ricoverati in reparti diversi dalla terapia intensiva | ricoverati_con_sintomi    | Numero                        | 3                   |
 | **di_cui_ricoverati_in_terapia_intensiva**           | Attuale numero di casi positivi ricoverati in terapia intensiva   | terapia_intensiva                         | Numero                        | 3                   |
 | **attualmente_positivi** | Attuale numero di casi positivi; _calcolo: ricoverati_totale + in_isolamento_domiciliare_      | totale_positivi  | Numero                        | 3                   |
-| **nuovi_positivi**  | Nuovi attualmente positivi; _calcolo: attualmente_positivi - attualmente_positivi del giorno prima_       | nuovi_positivi  | Numero                        | 3                   |
 | **tasso_positivi_x1000** | Tasso attuali casi positivi ogni 1000 abitanti residenti; _calcolo: attualmente_positivi / residenti * 1000_  |   | Numero                        | 0,85                   |
 | **sign_positivi_x1000**  | Significatività degli attuali casi positivi ogni 1000 abitanti residenti rispetto al tasso medio regionale; _calcolo: 1 se tasso_positivi_x1000 superiore del 5% alla media, oppure -1 se tasso_positivi_x1000 inferiore del 5% alla media, altrimenti 0 se intorno alla media_  |   | Numero                        | 1                   |
 | **guariti**              | Totale dei casi positivi che risolvono i sintomi dell’infezione da Covid-19 e che risultano negativi in due test consecutivi effettuati a distanza di 24 ore uno dall’altro           | dimessi_guariti                            | Numero                        | 3                   |

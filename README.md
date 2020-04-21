@@ -11,9 +11,9 @@ I dati grezzi utilizzati dalla dashboard sono resi disponibili attraverso [inter
 
 # Formato dati generali emergenza
 
-_v.1.12 del 20/04/2020_
+_v.1.13 del 21/04/2020_
 
-| Nome campo                  | Descrizione                       | Equivalente campo nazionale                  | Formato                       | Esempio             |
+| Nome campo                  | Descrizione                       | Equivalenti campi nazionali DPC            | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
 | **data**                        | Data dell’informazione            | data                                   | YYYY-MM-DD HH:MM:SS (ISO 8601) Ora italiana | 2020-03-05 12:15:45 |
 | **stato**                       | Stato di riferimento              | stato                                  | XYZ (ISO 3166-1 alpha-3)      | ITA                 |
@@ -34,10 +34,11 @@ _v.1.12 del 20/04/2020_
 | **ricoverati_totale**        | Attuale numero dei casi positivi che sono ricoverati in ospedale        | totale_ospedalizzati            | Numero                        | 3                   |
 | **di_cui_ricoverati_con_sintomi**      | Attuale numero di casi positivi che sono ricoverati in reparti diversi dalla terapia intensiva; _calcolo: ricoverati_totale - di_cui_ricoverati_in_terapia_intensiva_ | ricoverati_con_sintomi    | Numero                        | 3                   |
 | **di_cui_ricoverati_in_terapia_intensiva**           | Attuale numero di casi positivi ricoverati in terapia intensiva   | terapia_intensiva                         | Numero                        | 3                   |
-| **attualmente_positivi** | Attuale numero di casi positivi; _calcolo: ricoverati_totale + in_isolamento_domiciliare_      | totale_positivi  | Numero                        | 3                   |
+| **attualmente_positivi** | Attuale numero di casi positivi; _calcolo: ricoverati_totale + in_isolamento_domiciliare_      | totale_positivi _= attualmente
+_positivi - guariti_clinici_  | Numero                        | 3                   |
 | **tasso_positivi_x1000** | Tasso attuali casi positivi ogni 1000 abitanti residenti; _calcolo: attualmente_positivi / residenti * 1000_  |   | Numero                        | 0,85                   |
 | **sign_positivi_x1000**  | Significatività degli attuali casi positivi ogni 1000 abitanti residenti rispetto al tasso medio regionale; _calcolo: 1 se tasso_positivi_x1000 superiore del 5% alla media, oppure -1 se tasso_positivi_x1000 inferiore del 5% alla media, altrimenti 0 se intorno alla media_  |   | Numero                        | 1                   |
-| **guariti**              | Totale dei casi positivi che risolvono i sintomi dell’infezione da Covid-19 e che risultano negativi in due test consecutivi effettuati a distanza di 24 ore uno dall’altro           | dimessi_guariti                            | Numero                        | 3                   |
+| **guariti**              | Totale dei casi positivi che risolvono i sintomi dell’infezione da Covid-19 e che risultano negativi in due test consecutivi effettuati a distanza di 24 ore uno dall’altro           | dimessi_guariti _= =guariti + guariti_clinici_           | Numero                        | 3                   |
 | **guariti_clinici**      | Totale dei casi positivi che risultano clinicamente guariti, anche se ancora positivi al test. Pur non essendo più necessario il ricovero, la persona non può ritornare alla vita di comunità perché ancora con una carica virale elevata.      |                             | Numero                        | 3                   |
 | **deceduti**             | Totale dei casi positivi che sono deceduti, anche con diagnosi post-mortem; La conferma che la causa del decesso è attribuibile esclusivamente al SARS-CoV-2 verrà dichiarata dall’Istituto Superiore di Sanità | deceduti                                  | Numero                        | 3                   |
 | **indice_letalita**      | Percentuale di deceduti sul totale dei casi positivi; _calcolo: deceduti * 100 / casi_positivi_ |                                   | Numero                        | 3                   |

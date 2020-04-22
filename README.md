@@ -9,9 +9,11 @@ I dati vengono pubblicati nella dashboard anche più volte al giorno,  in base 
 
 I dati grezzi utilizzati dalla dashboard sono resi disponibili attraverso [interfacce API](https://apistore.regione.umbria.it/store/apis/info?name=COVID-19&version=1.0.0&provider=admin&tag=Agenda%20digitale-group) e tramite [dataset open data](http://dati.umbria.it/group/protezione-civile).
 
-# Formato dati generali emergenza
+# Formato dei dati 
 
-_v.1.13 del 21/04/2020_
+## Tracciato dati generali emergenza
+
+_v.1.14 del 22/04/2020_
 
 | Nome campo                  | Descrizione                       | Equivalenti campi nazionali DPC            | Formato                       | Esempio             |
 |-----------------------------|-----------------------------------|----------------------------------------|-------------------------------|---------------------|
@@ -28,13 +30,19 @@ _v.1.13 del 21/04/2020_
 | **casi_positivi**                 | Totale complessivo delle persone ad oggi risultate positive ad almeno un tampone oro-faringeo; _anche uguale a: attualmente_positivi + guariti + deceduti_              | totale_casi         | Numero                        | 3                   |
 | **nuovi_positivi**  | Nuovi casi positivi dal giorno precedente; _calcolo: casi_positivi - casi_positivi del giorno prima_       | nuovi_positivi  | Numero                        | 3                   |
 | **isolamento**      | Totale complessivo delle persone sottoposte alle due modalità di isolamento possibile, fiduciario o contumaciale. Quindi non per forza testate positive; _calcolo: attualmente_positivi + isolamento_volontario_ |                        | Numero                        | 3                   |
-| **isolamento_volontario (c.d. fiduciario)**      | Attuale numero di persone sottoposte ad isolamento fiduciario in quanto hanno avuto contatti stretti con casi positivi, loro familiari o casi sospetti definiti dall'ISP. Non sono testate positive e sono in isolamento in casa o altra struttura non ospedaliera |                        | Numero                        | 3                   |
-| **in_isolamento_domiciliare (c.d. contumaciale)**      | Attuale numero di casi positivi che sono tenuti a restare in isolamento contumaciale, senza ricovero | isolamento_domiciliare                       | Numero                        | 3                   |
+| **isolamento_fiduciario (era isolamento_volontario)**      | Attuale numero di persone sottoposte ad isolamento fiduciario in quanto hanno avuto contatti stretti con casi positivi, loro familiari o casi sospetti definiti dall'ISP. Non sono testate positive e sono in isolamento in casa o altra struttura non ospedaliera |                        | Numero                        | 3                   |
+| **isolamento_contumaciale (era in_isolamento_domiciliare)**      | Attuale numero di casi positivi che sono tenuti a restare in isolamento contumaciale, senza ricovero |                        | Numero                        | 3                   |
+| **isolamento_positivi**      | Attuale numero di casi positivi che sono tenuti a restare in isolamento contumaciale, tolti i guariti clinici; _calcolo: isolamento_positivi_sintomatici + isolamento_positivi_asintomatici; oppure anche: isolamento_contumaciale - guariti_clinici_ | isolamento_domicialiare              | Numero                        | 3                   |
+| **isolamento_positivi_sintomatici**      | Attuale numero di casi positivi in isolamento contumaciale, con sintomi |               | Numero                        | 3                   |
+| **isolamento_positivi_asintomatici**      | Attuale numero di casi positivi in isolamento contumaciale, senza sintomi |               | Numero                        | 3                   |
 | **usciti_da_isolamento**      | Totale numero di casi positivi usciti dall'isolamento contumaciale (non più positivi al tampone) |                        | Numero                        | 3                   |
 | **ricoverati_totale**        | Attuale numero dei casi positivi che sono ricoverati in ospedale        | totale_ospedalizzati            | Numero                        | 3                   |
 | **di_cui_ricoverati_con_sintomi**      | Attuale numero di casi positivi che sono ricoverati in reparti diversi dalla terapia intensiva; _calcolo: ricoverati_totale - di_cui_ricoverati_in_terapia_intensiva_ | ricoverati_con_sintomi    | Numero                        | 3                   |
 | **di_cui_ricoverati_in_terapia_intensiva**           | Attuale numero di casi positivi ricoverati in terapia intensiva   | terapia_intensiva                         | Numero                        | 3                   |
-| **attualmente_positivi** | Attuale numero di casi positivi; _calcolo: ricoverati_totale + in_isolamento_domiciliare_      | totale_positivi _= calcolo: attualmente_positivi - guariti_clinici_  | Numero                        | 3                   |
+| **terapia_intensiva_attuali_posti**           | Attuale numero di posti in terapia intensiva   |                          | Numero                        | 3                   |
+| **in_terapia_intensiva_attuali_degenti**           | Attuale numero di ricoverati (anche non positivi) in terapia intensiva   |                          | Numero                        | 3                   |
+| **totale_positivi** | Attuale numero di casi positivi tolti i guariti clinici ; _calcolo: attualmente_positivi - guariti_clinici; oppure anche: isolamento_positivi + ricoverati_totale_    | totale_positivi  | Numero                  | 3  |
+| **attualmente_positivi** | Attuale numero di casi positivi; _calcolo: ricoverati_totale + in_isolamento_contumaciale_      |         | Numero                     | 3              |
 | **tasso_positivi_x1000** | Tasso attuali casi positivi ogni 1000 abitanti residenti; _calcolo: attualmente_positivi / residenti * 1000_  |        | Numero                        | 0,85                   |
 | **sign_positivi_x1000**  | Significatività degli attuali casi positivi ogni 1000 abitanti residenti rispetto al tasso medio regionale; _calcolo: 1 se tasso_positivi_x1000 superiore del 5% alla media, oppure -1 se tasso_positivi_x1000 inferiore del 5% alla media, altrimenti 0 se intorno alla media_  |   | Numero                        | 1                   |
 | **guariti**              | Totale dei casi positivi che risolvono i sintomi dell’infezione da Covid-19 e che risultano negativi in due test consecutivi effettuati a distanza di 24 ore uno dall’altro           | dimessi_guariti _= calcolo: guariti + guariti_clinici_           | Numero                        | 3                   |
@@ -42,7 +50,10 @@ _v.1.13 del 21/04/2020_
 | **deceduti**             | Totale dei casi positivi che sono deceduti, anche con diagnosi post-mortem; La conferma che la causa del decesso è attribuibile esclusivamente al SARS-CoV-2 verrà dichiarata dall’Istituto Superiore di Sanità | deceduti                                  | Numero                        | 3                   |
 | **indice_letalita**      | Percentuale di deceduti sul totale dei casi positivi; _calcolo: deceduti * 100 / casi_positivi_ |                                   | Numero                        | 3                   |
 | **tamponi_eseguiti**     | Totale dei tamponi (test) effettuati, un soggetto può essere sottoposto a più tamponi quindi non è indicativo delle persone controllate       | tamponi                        | Numero                        | 3                   |
-| **tamponi_positivi**     | Totale dei tamponi (test) effettuati con esito positivo, un soggetto può essere sottoposto a più tamponi       |                         | Numero                        | 3                   |
 | **nuovi_tamponi_eseguiti** | Nuovi tamponi eseguiti nel singolo giorno; _calcolo: tamponi_eseguiti - tamponi_eseguiti del giorno prima_       |                         | Numero                        | 3                   |
+| **tamponi_positivi**     | Totale dei tamponi (test) effettuati con esito positivo, un soggetto può essere sottoposto a più tamponi       |                         | Numero                        | 3                   |
+| **casi_testati**     | Totale dei soggetti sottoposti a test        |                         | Numero                        | 3                   |
+| **nuovi_casi_testati** | Nuovi soggetti su cui si è eseguito il test nel singolo giorno; _calcolo: casi_testati - casi_testati del giorno prima_       |                         | Numero                        | 3                   |
+| **testo_acc**      | Testo sostitutivo del dato a fini di accessibilità.    |      | Testo         | XYZ           |
 | **note**                 | Eventuali note sul dato raccolto. In questo campo viene indicata anche l'eventuale revisione di aggiornamento del dato.       |                         | Testo                        | XYZ                   |
-| **status**               | Se dato ufficiale confermato = "pub"       |                         | Testo                        | pub                   |
+| **status**               | Se dato ufficiale confermato = "pub"       |                         | Testo                        | pub       |

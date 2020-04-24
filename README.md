@@ -17,8 +17,8 @@ _v.1.15 del 22/04/2020_
 
 nb. La disponibilità attuale di ogni campo per le varie aree geografiche o strutture è indicata nelle colonne "Disp".
 
-| Nome campo         | Descrizione           | Disp.Naz.(equivalente campo DPC) |Disp.Reg.|Disp.Com.|Disp.Osp.| Formato | Esempio |
-|--------------------|-----------------------|----------------------------------|---------|---------|---------|---------|---------|
+| Nome campo         | Descrizione           | Disp.Naz. (equivalente campo DPC) |Disp. Reg.|Disp. Com.|Disp. Osp.| Formato | Esempio |
+|--------------------|-----------------------|-----------------------------------|----------|----------|----------|---------|---------|
 | **data**                        | Data dell’informazione            | data     |X|X|X       | YYYY-MM-DD HH:MM:SS (ISO 8601) Ora italiana | 2020-03-05 12:15:45 |
 | **stato**                       | Stato di riferimento              | stato     |X|X|X      | XYZ (ISO 3166-1 alpha-3)      | ITA                 |
 | **codice_regione**              | Codice della Regione (ISTAT) | codice_regione |X|X|X      | Numero    | 10                  |

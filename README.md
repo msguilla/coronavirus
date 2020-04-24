@@ -13,7 +13,7 @@ I dati grezzi utilizzati dalla dashboard sono resi disponibili attraverso [inter
 
 ## Tracciato dati generali emergenza
 
-_v.1.15 del 22/04/2020_
+_v.1.20 del 24/04/2020_
 
 nb. La disponibilità attuale di ogni campo per le varie aree geografiche o strutture è indicata nelle colonne "Disp".
 

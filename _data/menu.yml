@@ -1,15 +1,5 @@
-- title: "Home"
+- title: "Home (dati generali)"
   url: /
 
-- title: "abc"
-  url: abc
-  dropdown:
-  - title: abc
-    url: abc
-    dropdown:
-    - title: "abc"
-      url: abc
-    - title: "abc"
-      url: abc
-    - title: abc
-      url: abc
+- title: "Dati per comune"
+  url: comuni

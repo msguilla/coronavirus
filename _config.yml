@@ -18,7 +18,7 @@ header_title: Dashboard COVID-19 Regione Umbria
 header_subtitle: Sito tematico sui dati dell'emergenza coronavirus in Umbria
 search: false
 search_full_content: false
-mega_menu: false    # if true, require _data/menu.yml
+mega_menu: true    # if true, require _data/menu.yml
 mega_menu_accedi: false
 
 # Social profiles

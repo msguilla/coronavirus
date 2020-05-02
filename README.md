@@ -15,6 +15,8 @@ I dati grezzi utilizzati dalla dashboard sono resi disponibili attraverso [inter
 
 _v.1.20 del 24/04/2020_
 
+![Schema principali concetti](/img/schema_tracciato_covid_umbria.png)
+
 nb. La disponibilità attuale di ogni campo per le varie aree geografiche o strutture è indicata nelle colonne "Disp".
 
 | Nome campo         | Descrizione           | Disp.Naz. (equivalente campo DPC) |Disp. Reg.|Disp. Com.|Disp. Osp.| Formato | Esempio |

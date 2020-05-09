@@ -26,8 +26,8 @@ nb. La disponibilità attuale di ogni campo per le varie aree geografiche o stru
 | **codice_regione**              | Codice della Regione (ISTAT) | codice_regione |X|X|X      | Numero    | 10                  |
 | **denominazione_regione**              | Denominazione della Regione |denominazione_regione |X|X|X | Testo                        | Umbria                  |
 | **codice_geo**              | Codice area geografica (ISTAT per i comuni) a cui si riferiscono i dati |      |X|X|    | Numero                        | 55004                  |
-| **denominazione_geo**       | Denominazione dell'area o struttura a cui si riferiscono i dati       |      |X|X|X    | Testo                         | Amelia             |
-| **tipo_geo**              | Tipo di area geografica o struttura a cui si riferiscono i dati (valorizzato "extra" per i dati sui non residenti) |    |X|X|X    | Testo                        | Comune                  |
+| **denominazione_geo**       | Denominazione dell'area geografica (ad es. regione o comune) o struttura (ad es. ospedale) a cui si riferiscono i dati       |      |X|X|X    | Testo                         | Amelia             |
+| **tipo_geo**              | Tipo di area geografica o struttura a cui si riferiscono i dati. Valorizzato nel modo seguente: _regione; comune; ospedale; extra (per i dati sui non residenti); |    |X|X|X    | Testo                        | Comune                  |
 | **lat_geo**                         | Latitudine (centroide)            | lat     |X|X|        | WGS84                         | 42.6589177          |
 | **long_geo**                        | Longitudine (centroide)           | long    |X|X|        | WGS84                         | 13.70439971         |
 | **residenti**                 | Totale residenti da ISTAT 2019              |          |X|X|n/a           | Numero                        | 11819                   |

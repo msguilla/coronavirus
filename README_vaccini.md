@@ -1,5 +1,5 @@
 # Descrizione Dashboard Vaccini - COVID-19 Regione Umbria
-_versione 0.4 BETA (attualmente in costruzione)_
+_versione 1 BETA4 (attualmente in costruzione)_
 
 Dashboard realizzata dalla Regione Umbria allo scopo di informare i cittadini e mettere a disposizione in modo trasparente i dati raccolti, utili ai soli fini comunicativi e informativi, sotto licenza CC-BY-4.0. I dati vengono pubblicati nella dashboard anche più volte al giorno, in base al loro aggiornamento progressivo e con un processo validato da parte della Funzione Sanità del Centro Operativo Regionale di cui alla DGR 126/2020. Occorre quindi fare riferimento a data del fenomeno ed alla data di ultimo aggiornamento.
 

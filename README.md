@@ -7,9 +7,9 @@ I dati vengono pubblicati nella dashboard anche più volte al giorno,  in base 
 
 I dati grezzi utilizzati dalla dashboard sono resi disponibili attraverso [interfacce API](https://apistore.regione.umbria.it/store/apis/info?name=COVID-19&version=1.0.0&provider=admin&tag=Agenda%20digitale-group) e tramite [dataset open data](http://dati.umbria.it/group/protezione-civile). Il lavoro per renderli disponibili tutti via API e open data è in via di completamento.
 
-# Tracciato e formato dei dati 
+## Tracciati e descrizione dei dataset:
 
-[CASI e dati generali](README_casi) (casi, test, strutture ospedaliere, ecc anche per COMUNE)
+[CASI e dati generali](README_casi.md) (casi, test, strutture ospedaliere, ecc anche per COMUNE)
 
-[VACCINI](README_vaccini) (dosi consegnate e somministrate, vaccinazioni completate, ecc)
+[VACCINI](README_vaccini.md) (dosi consegnate e somministrate, vaccinazioni completate, ecc)
 

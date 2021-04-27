@@ -3,7 +3,7 @@ _v.1.20 del 24/04/2020_
 
 Descrizione dei dataset visualizzati nella dashboard realizzata dalla Regione Umbria allo scopo di informare i cittadini e mettere a disposizione in modo trasparente i dati raccolti, utili ai soli fini comunicativi e informativi, sotto licenza CC-BY-4.0. I dati vengono pubblicati nella dashboard anche più volte al giorno, in base al loro aggiornamento progressivo e con un processo validato da parte della Funzione Sanità del Centro Operativo Regionale di cui alla DGR 126/2020. Occorre quindi fare riferimento a data del fenomeno ed alla data di ultimo aggiornamento.
 
-## Dataset: vaccini\_casi e dati generali emergenza
+## Dataset: casi e dati generali emergenza
 
 Il dataset contiene le informazioni generali riguardanti l'emergenza da coronavirus in Umbria, pubblicati a partire da aprile 2020. 
 

@@ -3,6 +3,8 @@ _versione 0.4 BETA (attualmente in costruzione)_
 
 Dashboard realizzata dalla Regione Umbria allo scopo di informare i cittadini e mettere a disposizione in modo trasparente i dati raccolti, utili ai soli fini comunicativi e informativi, sotto licenza CC-BY-4.0. I dati vengono pubblicati nella dashboard anche più volte al giorno, in base al loro aggiornamento progressivo e con un processo validato da parte della Funzione Sanità del Centro Operativo Regionale di cui alla DGR 126/2020. Occorre quindi fare riferimento a data del fenomeno ed alla data di ultimo aggiornamento.
 
+Questi dataset sono stati pubblicati a partire da aprile 2021, ma i dati si riferiscono all'intero periodo di campagna vaccinale.
+
 ## Descrizione dei dataset e dei relativi tracciati dati
 
 ## Dataset: _somministrazioni_

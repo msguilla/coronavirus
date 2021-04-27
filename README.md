@@ -9,7 +9,9 @@ I dati grezzi utilizzati dalla dashboard sono resi disponibili attraverso [inter
 
 ## Tracciati e descrizione dei dataset:
 
-[CASI e dati generali](README_casi.md) (casi, test, strutture ospedaliere, ecc anche per COMUNE)
+[CASI e dati generali](README_casi.md)
+casi, test, strutture ospedaliere, ecc anche per COMUNE
 
-[VACCINI](README_vaccini.md) (dosi consegnate e somministrate, vaccinazioni completate, ecc)
+[VACCINI](README_vaccini.md)
+dosi consegnate e somministrate, vaccinazioni completate, prenotazioni, punti vaccinali, ecc
 

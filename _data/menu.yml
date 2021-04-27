@@ -2,11 +2,14 @@
   url: /
 
 - title: "Dati generali sui casi"
-  url: comuni
+  url: casi
 
 - title: "Dati per comune"
   url: comuni
 
+- title: "Dati sui vaccini"
+  url: vaccini
+  
 - title: "Definizioni usate e info per sviluppatori"
   url: "https://github.com/Regione-Umbria/coronavirus"
   

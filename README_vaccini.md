@@ -1,11 +1,11 @@
 # Descrizione Dashboard Vaccini - COVID-19 Regione Umbria
-(versione 0.4 BETA attualmente in costruzione)
+_versione 0.4 BETA (attualmente in costruzione)_
 
 Dashboard realizzata dalla Regione Umbria allo scopo di informare i cittadini e mettere a disposizione in modo trasparente i dati raccolti, utili ai soli fini comunicativi e informativi, sotto licenza CC-BY-4.0. I dati vengono pubblicati nella dashboard anche più volte al giorno, in base al loro aggiornamento progressivo e con un processo validato da parte della Funzione Sanità del Centro Operativo Regionale di cui alla DGR 126/2020. Occorre quindi fare riferimento a data del fenomeno ed alla data di ultimo aggiornamento.
 
 ## Descrizione dei dataset e dei relativi tracciati dati
 
-## Dataset: vaccini\_somministrazioni
+## Dataset: _somministrazioni_
 
 Il dataset contiene le informazioni riguardanti le somministrazioni delle dosi vaccinali dei diversi fornitori, suddivisi per fasce d'età e sesso. 
 
@@ -48,7 +48,7 @@ n.b. La disponibilità attuale di ogni campo per le varie aree geografiche o str
 | nuovi\_vaccinati\_totali      | Nuovi soggetti che hanno completato la vaccinazione nel singolo giorno; calcolo: vaccinati\_totale - vaccinati\_totale del giorno prima                                                                                                                                                                                                           |                                   | X          | X          |            | X               | Numero                                      | 3                   |
 | nuovi\_dosi\_somministrate    | Nuove dosi somministrate nel singolo giorno; calcolo: dosi\_somministrate - dosi\_somministrate del giorno prima                                                                                                                                                                                                                                  |                                   | X          | X          |            | X               | Numero                                      | 3                   |
 
-## Dataset: vaccini\_categorie
+## Dataset: _categorie_
 Il dataset contiene le informazioni riguardanti le somministrazioni in Umbria delle dosi vaccinali dei diversi fornitori, suddivisi per categorie, Fasce di età e sesso.
 
 Interrogabile via PAI: no
@@ -85,7 +85,7 @@ n.b. La disponibilità attuale di ogni campo per le varie aree geografiche o str
 | vaccini\_dose2               | Numero seconde dosi vaccino somministrate per categoria di rischio                                                                                                                                                                                                                                                                                                        | seconda\_dose                     | X          |            |            |                 | Numero                                      | 10                            |
 | vaccinati\_categoria\_totale | Totale dei soggetti che hanno completato il percorso vaccinale per categoria di rischio                                                                                                                                                                                                                                                                                   |                                   | X          |            |            |                 | Numero                                      | 10                            |
 
-## Dataset: vaccini\_prenotazioni
+## Dataset: _prenotazioni_
 Il dataset contiene le informazioni riguardanti le prenotazioni di chi ancora deve essere vaccinato relative ai diversi fornitori, suddivisi per fasce d'età e sesso; non tengono conto delle prenotazioni annullate.  
 
 Interrogabile via API: no
@@ -123,7 +123,7 @@ n.b. La disponibilità attuale di ogni campo per le varie aree geografiche o str
 | percentuale\_dose2        | Percentuale delle seconde dosi di vaccino prenotate, ancora da effettuare, rispetto ai residenti di età>15 anni; calcolo: vaccini\_dose2/residenti\*100                                                                                                                                                                                           |                                   | X          | X          |            | X               | Numero                                      | 3                   |
 | percentuale\_prenotati    | Percentuale delle prenotazioni totali rispetto ai residenti di età>15 anni; calcolo: prenotati\_totale/residenti\*100                                                                                                                                                                                                                             |                                   | X          | X          |            | X               | Numero                                      | 3                   |
 
-## Dataset vaccini\_consegne
+## Dataset _consegne_
 Il dataset contiene le informazioni riguardanti le consegne dei vaccini in Umbria per fornitore. 
 I dati sono stati presi da https://github.com/italia/covid19-opendata-vaccini e si riferiscono ad un orario differente rispetto agli altri dataset.
 
@@ -159,7 +159,7 @@ n.b. La disponibilità attuale di ogni campo per le varie aree geografiche o str
 | vaccini\_dosi\_somministrate     | Numero totale di dosi di vaccino somministrate                                                                                                                                                                                                                                                                                                    | dosi\_somministrate               | X          |            |            |                 | Numero                                      | 10                  |
 | percentuale\_dosi\_somministrate | Percentuale di dosi somministrate sulle dosi consegnate; calcolo: vaccini\_dosi\_somministrate/vaccini\_dosi\_consegnate\*100                                                                                                                                                                                                                     | percentuale\_somministrazione     | X          |            |            |                 | Numero                                      | 50                  |
 
-## Dataset: vaccini\_pv
+## Dataset: _pv_ (punti vaccinali)
 Il dataset contiene le informazioni riguardanti i punti vaccinali di somministrazione e le relative dosi somministrate per fascia di età e sesso.
 
 Interrogabile via API: no

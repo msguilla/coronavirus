@@ -3,13 +3,13 @@ _v.1.20 del 24/04/2020_
 
 Descrizione dei dataset visualizzati nella dashboard realizzata dalla Regione Umbria allo scopo di informare i cittadini e mettere a disposizione in modo trasparente i dati raccolti, utili ai soli fini comunicativi e informativi, sotto licenza CC-BY-4.0. I dati vengono pubblicati nella dashboard anche più volte al giorno, in base al loro aggiornamento progressivo e con un processo validato da parte della Funzione Sanità del Centro Operativo Regionale di cui alla DGR 126/2020. Occorre quindi fare riferimento a data del fenomeno ed alla data di ultimo aggiornamento.
 
-## Dataset: casi e dati generali emergenza
+## Dataset: _casi e dati generali emergenza_
 
 Il dataset contiene le informazioni generali riguardanti l'emergenza da coronavirus in Umbria, pubblicati a partire da aprile 2020. 
 
-Interrogabile via API: [si](https://apistore.regione.umbria.it/store/apis/info?name=COVID-19&version=1.0.0&provider=admin&tag=Agenda%20digitale-group)
+Interrogabile via API: [SI](https://apistore.regione.umbria.it/store/apis/info?name=COVID-19&version=1.0.0&provider=admin&tag=Agenda%20digitale-group)
 
-Pubblicato in Open Data: [si](http://dati.umbria.it/group/protezione-civile) (in via di completamento)
+Pubblicato in Open Data: [SI](http://dati.umbria.it/group/protezione-civile) (in via di completamento)
 
 ![Schema principali concetti](/img/schema_tracciato_covid_umbria.png)
 

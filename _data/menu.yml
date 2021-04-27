@@ -1,5 +1,12 @@
-- title: "Home (dati generali)"
+- title: "Home"
   url: /
+
+- title: "Dati generali sui casi"
+  url: comuni
 
 - title: "Dati per comune"
   url: comuni
+
+- title: "Definizioni usate e info per sviluppatori"
+  url: "https://github.com/Regione-Umbria/coronavirus"
+  

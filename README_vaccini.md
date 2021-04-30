@@ -13,7 +13,7 @@ Il dataset contiene le informazioni riguardanti le somministrazioni delle dosi v
 
 Interrogabile via API: no
 
-Pubblicato in Open Data: [SI](http://dati.umbria.it/group/protezione-civile)
+Pubblicato in Open Data: [SI](http://dati.umbria.it/dataset?q=vaccini)
 
 n.b. La disponibilità attuale di ogni campo per le varie aree geografiche o strutture è indicata nelle colonne "Disp".
 
@@ -55,7 +55,7 @@ Il dataset contiene le informazioni riguardanti le somministrazioni in Umbria de
 
 Interrogabile via PAI: no
 
-Pubblicato in Open Data: no
+Pubblicato in Open Data: [SI](http://dati.umbria.it/dataset?q=vaccini)
 
 n.b. La disponibilità attuale di ogni campo per le varie aree geografiche o strutture è indicata nelle colonne "Disp".
 
@@ -131,7 +131,7 @@ I dati sono stati presi da https://github.com/italia/covid19-opendata-vaccini e 
 
 Interrogabile via API: no
 
-Pubblicato in Open Data: no
+Pubblicato in Open Data: [SI](http://dati.umbria.it/dataset?q=vaccini)
 
 n.b. La disponibilità attuale di ogni campo per le varie aree geografiche o strutture è indicata nelle colonne "Disp".
 
@@ -166,7 +166,7 @@ Il dataset contiene le informazioni riguardanti i punti vaccinali di somministra
 
 Interrogabile via API: no
 
-Pubblicato in Open Data: no
+Pubblicato in Open Data: [SI](http://dati.umbria.it/dataset?q=vaccini)
 
 | Nome campo               | Descrizione                                                                                                                                                                                                                                                                                                                                       | Disp.Naz. (equivalente campo DPC) | Disp. Reg. | Disp. Com. | Disp. Osp. | Disp. Distretto | Formato                                     | Esempio                        |
 | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | ---------- | ---------- | ---------- | --------------- | ------------------------------------------- | ------------------------------ |
